@@ -1,58 +1,92 @@
 # 🎨 Transfert de Couleur par Transport Optimal
 
-## 🎯 Résultats (Avant / Après)
-L'algorithme capture la palette de couleurs de l'image "Cible" et l'applique à la géométrie de l'image "Source".
+## 🎯 Résultat (avant / après)
 
-| Image Source | Image Cible (Palette) | Résultat (Transfert) |
+L'algorithme capture la palette de couleurs de l'image « Cible » et l'applique à la géométrie de l'image « Source ».
+
+| Image Source | Image Cible (palette) | Résultat (transfert) |
 | :---: | :---: | :---: |
-| ![Source](Images/parcfloral.png) | ![Cible](Images/parrot.png) | **![Résultat](Images/3.png)** |
+| ![Source](Images/parcfloral.png) | ![Cible](Images/parrot.png) | ![Résultat](Images/3.png) |
 
-*(Remplacez les chemins ci-dessus par les liens vers vos propres images pour illustrer le résultat !)*
+*Source des images : jeu de données du cours.*
 
 ---
 
-## 📝 Contexte et Objectif
-Ce projet d'apprentissage a été réalisé pour explorer le domaine du traitement d'images en implémentant une méthode algorithmique de "Transfert de couleur". 
-L'objectif est d'extraire la distribution des couleurs d'une image de référence et de l'appliquer sur le contenu structurel d'une autre image, tout en conservant les détails de cette dernière.
+## 📝 Contexte et objectif
 
-Pour y parvenir, ce travail s'appuie sur les concepts et le cadre mathématique du **Transport Optimal**.
+Projet d'apprentissage réalisé pour explorer le traitement d'images en implémentant une méthode de transfert de couleur.
+Il s'agit d'extraire la distribution des couleurs d'une image de référence et de l'appliquer au contenu d'une autre image, en conservant les détails de cette dernière. Le travail s'appuie sur le cadre mathématique du **transport optimal**.
 
-### 🛠️ Outils et Technologies
-* **Langage & Environnement :** Python, Jupyter Notebook
-* **Domaines d'application :** Traitement d'images (Computer Vision), Mathématiques appliquées
-* **Bibliothèques principales :** `NumPy` (calcul matriciel), `OpenCV` (traitement d'images), `Matplotlib` (visualisations 2D et 3D)
+**Méthode implémentée :** Développée dans le notebook.
+
+### 🛠️ Outils et technologies
+- **Langage et environnement :** Python, Jupyter Notebook
+- **Domaines :** traitement d'images (vision par ordinateur), mathématiques appliquées
+- **Bibliothèques :** `NumPy` (calcul matriciel), `OpenCV` (traitement d'images), `Matplotlib` (visualisations 2D et 3D)
 
 ### 📂 Contenu du dépôt
-* 📓 `transfert_couleur_transport_optimal.ipynb` : Le notebook Jupyter principal documentant l'implémentation de l'algorithme, les étapes de traitement (extraction des canaux RGB) et les visualisations des résultats.
+- 📓 `transfert_couleur_transport_optimal.ipynb` : notebook principal (implémentation, extraction des canaux RGB, visualisations).
+- 🖼️ `Images/` : images utilisées pour l'illustration.
 
-> 💡 **Note :** Le notebook contient les sorties (outputs) pré-calculées pour vous permettre de visualiser directement le fonctionnement de l'algorithme sans avoir à exécuter le code.
+> 💡 Le notebook contient ses sorties pré-calculées : le fonctionnement de l'algorithme est visible sans exécuter le code.
 
 ---
-<br>
+
+## ⚠️ Limites et pistes d'amélioration
+
+**Limites**
+- Résultat illustré sur une seule paire d'images.
+- Aucune mesure quantitative de la qualité du transfert .
+
+**Pistes d'amélioration**
+- Comparer avec une méthode simple (alignement de la moyenne et de l'écart-type par canal) pour montrer ce que le transport optimal apporte.
+- Tester sur plusieurs paires d'images et mesurer le temps de calcul.
+
+
+---
 
 <details>
-<summary>🇬🇧 <b>English version (Click to expand)</b></summary>
+<summary>🇬🇧 <b>English version</b></summary>
 
-## 🎯 Results (Before / After)
-The algorithm captures the color palette from the "Target" image and applies it to the geometry of the "Source" image.
+# 🎨 Color Transfer via Optimal Transport
 
-| Source Image | Target Image (Palette) | Result (Transfer) |
+## 🎯 Result (before / after)
+
+The algorithm captures the color palette of the "Target" image and applies it to the geometry of the "Source" image.
+
+| Source image | Target image (palette) | Result (transfer) |
 | :---: | :---: | :---: |
-| ![Source](Images/parcfloral.png) | ![Target](Images/parrot.png) | **![Result](Images/3.png)** |
+| ![Source](Images/parcfloral.png) | ![Target](Images/parrot.png) | ![Result](Images/3.png) |
 
----
+*Image source: From coursework.*
 
-## 📝 Context and Objective
-This learning project was developed to explore the field of image processing by implementing a "Color Transfer" algorithm. 
-The goal is to capture the color distribution of a reference image and apply it to the structural content of another image, while preserving the latter's details and geometry.
+## 📝 Context and goal
 
-To achieve this, the work relies on the concepts and mathematical framework of **Optimal Transport**.
+Learning project to explore image processing by implementing a color transfer method: extract the color distribution of a reference image and apply it to the content of another one while preserving its details. The work relies on the mathematical framework of **optimal transport**.
 
-### 🛠️ Tools & Technologies
-* **Language & Environment:** Python, Jupyter Notebook
-* **Application Domains:** Image Processing (Computer Vision), Applied Mathematics
-* **Core Libraries:** `NumPy` (matrix computation), `OpenCV` (image processing), `Matplotlib` (2D and 3D visualizations)
+**Implemented method:** describe in the notebook.
 
-### 📂 Repository Content
-* 📓 `transfert_couleur_transport_optimal.ipynb`: The main Jupyter notebook documenting the algorithm implementation, processing steps (RGB channel extraction), and result visualizations.
+### 🛠️ Tools
+- **Language and environment:** Python, Jupyter Notebook
+- **Domains:** image processing (computer vision), applied mathematics
+- **Libraries:** `NumPy`, `OpenCV`, `Matplotlib`
+
+### 📂 Repository content
+- 📓 `transfert_couleur_transport_optimal.ipynb`: main notebook (implementation, RGB channel extraction, visualizations).
+- 🖼️ `Images/`: images used for illustration.
+
+> 💡 The notebook includes pre-computed outputs, so you can see how the algorithm works without running the code.
+
+## ⚠️ Limitations and improvements
+
+**Limitations**
+- Result illustrated on a single image pair.
+- No quantitative measure of transfer quality .
+
+**Possible improvements**
+- Compare with a simple method (per-channel mean and standard deviation matching) to show what optimal transport brings.
+- Test on several image pairs and measure computation time.
+
+
+
 </details>
