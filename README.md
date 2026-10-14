@@ -5,7 +5,7 @@ L'algorithme capture la palette de couleurs de l'image "Cible" et l'applique à 
 
 | Image Source | Image Cible (Palette) | Résultat (Transfert) |
 | :---: | :---: | :---: |
-| ![Source](Images\parcfloral.png) | ![Cible](Images\parrot.png) | **![Résultat](Images\3.png)** |
+| ![Source](Images/parcfloral.png) | ![Cible](Images/parrot.png) | **![Résultat](Images/3.png)** |
 
 *(Remplacez les chemins ci-dessus par les liens vers vos propres images pour illustrer le résultat !)*
 
@@ -38,7 +38,7 @@ The algorithm captures the color palette from the "Target" image and applies it 
 
 | Source Image | Target Image (Palette) | Result (Transfer) |
 | :---: | :---: | :---: |
-| ![Source](Images\parcfloral.png) | ![Target](Images\parrot.png) | **![Result](Images\3.png)** |
+| ![Source](Images/parcfloral.png) | ![Target](Images/parrot.png) | **![Result](Images/3.png)** |
 
 ---
 
